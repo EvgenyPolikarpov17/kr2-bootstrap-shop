@@ -1,129 +1,53 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Форма заявки — Bootstrap Shop</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ShopProject — учебный интернет-магазин на Bootstrap: каталог, карточки товаров и форма заявки.">
+  <title>Оформление заявки — ShopProject</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
-
-```
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="mainNavbar">
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Главная</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="catalog.html">Каталог</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="product.html">Товар</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="order.html">Заявка</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Дополнительно
-      </a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
-        <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
-        <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-```
-
-  </div>
-</nav>
-
-<main class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-8">
-      <div class="card shadow-sm">
-        <div class="card-header bg-primary text-white">
-          <h1 class="h4 mb-0">Форма заявки</h1>
-        </div>
-
-```
-    <div class="card-body">
-      <div class="alert alert-info" role="alert">
-        Заполните форму. Поля со звёздочкой являются обязательными.
+<body id="top"><a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ShopProject</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="product.html?id=planner">Товар</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="order.html">Заявка</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li></ul>
       </div>
-
-      <form>
+    </div>
+  </nav>
+</header>
+<main id="main-content" class="py-4 py-lg-5"><div class="container">
+  <nav aria-label="Хлебные крошки" class="mb-3"><ol class="breadcrumb mb-0"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li><li class="breadcrumb-item active" aria-current="page">Заявка</li></ol></nav>
+  <section class="page-intro mb-4"><p class="eyebrow">Обратная связь</p><h1 class="section-title">Оформление заявки</h1><p class="section-copy">Заполните контактные данные и укажите, по какому вопросу с вами связаться. Обязательные поля отмечены звёздочкой.</p></section>
+  <div class="row g-4 align-items-start">
+    <div class="col-12 col-lg-8"><section class="form-panel" aria-labelledby="orderFormTitle"><h2 class="h4 mb-3" id="orderFormTitle">Контактные данные</h2>
+      
+      <form id="orderForm" class="needs-validation" novalidate>
         <div class="row g-3">
-          <div class="col-12 col-md-6">
-            <label for="order-name" class="form-label">Имя *</label>
-            <input id="order-name" name="name" type="text" class="form-control" required>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <label for="order-email" class="form-label">E-mail *</label>
-            <input id="order-email" name="email" type="email" class="form-control" required>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <label for="order-phone" class="form-label">Телефон</label>
-            <div class="input-group">
-              <span class="input-group-text">+7</span>
-              <input id="order-phone" name="phone" type="tel" class="form-control" placeholder="900 000-00-00">
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <label for="order-product" class="form-label">Товар</label>
-            <select id="order-product" name="product" class="form-select">
-              <option selected>Выберите товар</option>
-              <option value="product-1">Товар 1</option>
-              <option value="product-2">Товар 2</option>
-              <option value="product-3">Товар 3</option>
-            </select>
-          </div>
-
-          <div class="col-12">
-            <label for="order-comment" class="form-label">Комментарий</label>
-            <textarea id="order-comment" name="comment" class="form-control" rows="4"></textarea>
-          </div>
-
-          <div class="col-12">
-            <div class="form-check">
-              <input id="order-agree" class="form-check-input" type="checkbox" required>
-              <label class="form-check-label" for="order-agree">
-                Я согласен на обработку данных *
-              </label>
-            </div>
-          </div>
-
-          <div class="col-12 d-flex gap-2">
-            <button class="btn btn-primary" type="submit">Отправить заявку</button>
-            <button class="btn btn-outline-secondary" type="reset">Очистить</button>
-          </div>
+          <div class="col-12 col-md-6"><label for="orderName" class="form-label">Имя *</label><input id="orderName" class="form-control" name="name" type="text" minlength="2" autocomplete="given-name" required><div class="invalid-feedback">Введите имя длиной не менее двух символов.</div></div>
+          <div class="col-12 col-md-6"><label for="orderEmail" class="form-label">E-mail *</label><input id="orderEmail" class="form-control" name="email" type="email" autocomplete="email" required><div class="invalid-feedback">Введите корректный адрес e-mail.</div></div>
+          <div class="col-12 col-md-6"><label for="orderPhone" class="form-label">Телефон *</label><div class="input-group has-validation"><span class="input-group-text">+7</span><input id="orderPhone" class="form-control" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="900 000-00-00" pattern="[0-9 ()-]{10,16}" aria-describedby="phoneHint" required><div class="invalid-feedback">Проверьте номер телефона.</div></div><div class="form-text" id="phoneHint">Введите номер без кода страны.</div></div>
+          <div class="col-12 col-md-6"><label for="orderProduct" class="form-label">Выбранный товар *</label><select id="orderProduct" class="form-select" name="product" required><option value="">Выберите товар</option><option value="planner">Ежедневник A5 — 1 000 руб.</option><option value="organizer">Органайзер для стола — 1 500 руб.</option><option value="backpack">Городской рюкзак — 2 000 руб.</option><option value="lamp">Настольная лампа — 1 800 руб.</option><option value="pencil-case">Пенал на молнии — 900 руб.</option><option value="bottle">Бутылка для воды — 2 200 руб.</option></select><div class="invalid-feedback">Выберите товар.</div></div>
+          <div class="col-12 col-md-6"><label for="orderTopic" class="form-label">Тема заявки *</label><select id="orderTopic" class="form-select" name="topic" required><option value="">Выберите тему</option><option value="order">Заказ товара</option><option value="consultation">Консультация</option><option value="delivery">Вопрос по доставке</option></select><div class="invalid-feedback">Выберите тему обращения.</div></div>
+          <div class="col-12 col-md-6"><label for="orderDate" class="form-label">Желаемая дата связи</label><input id="orderDate" class="form-control" name="date" type="date"></div>
+          <div class="col-12"><label for="orderComment" class="form-label">Комментарий</label><textarea id="orderComment" class="form-control" name="comment" rows="4" maxlength="1000" placeholder="Дополнительная информация или удобное время для связи"></textarea></div>
+          <div class="col-12"><div class="form-check"><input class="form-check-input" id="orderConsent" name="consent" type="checkbox" required><label class="form-check-label" for="orderConsent">Я согласен на обработку персональных данных *</label><div class="invalid-feedback">Подтвердите согласие.</div></div></div>
+          <div class="col-12 d-flex flex-wrap gap-2"><button class="btn btn-primary" type="submit">Проверить заявку</button><button class="btn btn-outline-secondary" type="reset">Очистить форму</button></div>
         </div>
       </form>
-    </div>
+    </section></div>
+    <div class="col-12 col-lg-4"><aside class="side-panel" aria-labelledby="afterOrderTitle"><p class="eyebrow">Следующий шаг</p><h2 class="h4" id="afterOrderTitle">Что проверить перед отправкой</h2><ol class="ps-3 mb-3"><li class="mb-2">Укажите рабочий e-mail и телефон.</li><li class="mb-2">Выберите товар и тему обращения.</li><li>Проверьте согласие на обработку данных.</li></ol>
+</div></main>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Учебный интернет-магазин. Демонстрационный проект без серверной обработки заказов.</p></div>
+    <nav class="d-flex flex-wrap gap-3" aria-label="Ссылки в подвале"><a href="catalog.html">Каталог</a><a href="order.html">Оформить заявку</a><a href="#top">Наверх ↑</a></nav>
   </div>
-</div>
-```
-
-  </div>
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+</footer>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body></html>
