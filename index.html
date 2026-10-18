@@ -1,202 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная — Bootstrap Shop</title>
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
->
-<link rel="stylesheet" href="css/custom.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ShopProject — учебный интернет-магазин на Bootstrap: каталог, карточки товаров и форма заявки.">
+  <title>ShopProject — учебный интернет-магазин</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-    <header class="bg-primary text-white py-4">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-8">
-        <h1 class="h3 mb-1">Bootstrap Shop</h1>
-        <p class="mb-0 opacity-75">
-          Учебный интернет-магазин на Bootstrap
-        </p>
-      </div>
-
-      <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-        <span class="badge bg-light text-primary">
-          КР №2
-        </span>
+<body id="top"><a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ShopProject</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="product.html?id=planner">Товар</a></li><li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li></ul>
       </div>
     </div>
-  </div>
+  </nav>
 </header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<main id="main-content" class="py-4 py-lg-5">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+    <section class="hero-panel mb-5" aria-labelledby="home-title">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-12 col-lg-7"><div class="hero-copy">
+          <p class="eyebrow">Учебный интернет-магазин</p>
+          <h1 class="hero-title" id="home-title">Всё для учёбы и удобного рабочего места</h1>
+          <p class="hero-text">Подберите полезные вещи для занятий и повседневных задач. В каталоге есть описание, цена, наличие и возможность оформить демонстрационную заявку.</p>
+          <div class="d-flex flex-wrap gap-2"><a class="btn btn-primary btn-lg" href="catalog.html">Открыть каталог</a><a class="btn btn-outline-primary btn-lg" href="order.html">Оформить заявку</a></div>
+        </div></div>
+        <div class="col-12 col-lg-5"><div class="hero-art"><img src="images/product-1.webp" alt="Красный ежедневник на резинке" width="1200" height="1200"></div></div>
+      </div>
+    </section>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Переключить навигацию"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <section class="mb-5" aria-labelledby="benefits-title">
+      <div class="page-intro mb-4"><p class="eyebrow">Принцип работы</p><h2 class="section-title" id="benefits-title">Понятный путь от выбора к заявке</h2><p class="section-copy">Страницы связаны общей навигацией, а оформление выдержано в едином стиле.</p></div>
+      <div class="row g-3">
+        <div class="col-12 col-md-4"><article class="feature-box"><h3>Каталог с фильтрами</h3><p>Найдите нужный товар по категории, цене и наличию.</p></article></div>
+        <div class="col-12 col-md-4"><article class="feature-box"><h3>Подробная карточка</h3><p>Посмотрите описание, цену и основные характеристики.</p></article></div>
+        <div class="col-12 col-md-4"><article class="feature-box"><h3>Форма заявки</h3><p>Заполните контакты и выберите удобную тему обращения.</p></article></div>
+      </div>
+    </section>
 
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="product.html">Товар</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="order.html">Заявка</a>
-        </li>
-      </ul>
-    </div>
+    <section class="mb-5" id="popular" aria-labelledby="popular-title">
+      <div class="d-flex flex-column flex-sm-row align-items-sm-end justify-content-between gap-2 mb-3"><div><p class="eyebrow mb-1">Подборка</p><h2 class="section-title mb-0" id="popular-title">Популярные товары</h2></div><a href="catalog.html" class="link-primary">Все товары →</a></div>
+      <div class="row g-3"><div class="col-12 col-md-6 col-lg-4"><article class="product-card card h-100" data-product-card data-id="planner" data-category="study" data-tags="hit" data-price="1000" data-stock="yes" data-name="ежедневник a5">
+  <img class="product-card__image card-img-top" src="images/product-1.webp" alt="Красный ежедневник A5 с резинкой" loading="lazy">
+  <div class="product-card__body card-body">
+    <span class="badge text-bg-primary mb-2">Хит</span><p class="product-card__category">Для учёбы</p><h3 class="product-card__title card-title">Ежедневник A5</h3>
+    <p class="product-card__description card-text">Недатированный ежедневник с местом для планов и заметок.</p>
+    <div class="product-card__meta"><span class="product-card__availability">В наличии</span><span class="product-card__rating" aria-label="Рейтинг 4,8 из 5">★ 4,8</span></div>
+    <p class="product-card__price">1 000 руб.</p>
+    <div class="product-card__actions mt-2"><a class="btn btn-outline-primary" href="product.html?id=planner">Подробнее</a><button class="btn btn-primary js-open-order" type="button" data-product="planner" data-bs-toggle="modal" data-bs-target="#quickOrderModal">Заказать</button></div>
   </div>
-</nav>
-<main>
-  <section class="container my-5">
-    <div class="row align-items-center g-4">
-      <div class="col-12 col-lg-6">
-        <h2 class="display-5 fw-bold">
-          Учебный каталог товаров на Bootstrap
-        </h2>
-        <p class="lead text-muted">
-          Проект демонстрирует использование Bootstrap-сетки,
-          адаптивных колонок и базовых utility-классов.
-        </p>
-        <a class="btn btn-primary btn-lg" href="catalog.html">
-          Перейти в каталог
-        </a>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="p-5 bg-light border rounded text-center">
-          <p class="mb-0 text-muted">
-            Здесь может быть изображение, баннер или промо-блок.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container my-5">
-  <h2 class="text-center mb-4">Преимущества проекта</h2>
-
-  <div class="row g-4">
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Bootstrap-сетка</h3>
-        <p class="mb-0 text-muted">
-          Страница построена на 12-колоночной системе Bootstrap.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Адаптивность</h3>
-        <p class="mb-0 text-muted">
-          Колонки меняют ширину в зависимости от размера экрана.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Готовая база</h3>
-        <p class="mb-0 text-muted">
-          Проект подготовлен к добавлению карточек, форм и модальных окон.
-        </p>
-      </div>
-    </div>
+</article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="product-card card h-100" data-product-card data-id="organizer" data-category="desk" data-tags="new" data-price="1500" data-stock="yes" data-name="органайзер для стола">
+  <img class="product-card__image card-img-top" src="images/product-2.webp" alt="Чёрный настольный органайзер с канцелярскими принадлежностями" loading="lazy">
+  <div class="product-card__body card-body">
+    <span class="badge text-bg-success mb-2">Новинка</span><p class="product-card__category">Рабочее место</p><h3 class="product-card__title card-title">Органайзер для стола</h3>
+    <p class="product-card__description card-text">Удобное хранение канцелярии на рабочем столе.</p>
+    <div class="product-card__meta"><span class="product-card__availability">В наличии</span><span class="product-card__rating" aria-label="Рейтинг 4,6 из 5">★ 4,6</span></div>
+    <p class="product-card__price">1 500 руб.</p>
+    <div class="product-card__actions mt-2"><a class="btn btn-outline-primary" href="product.html?id=organizer">Подробнее</a><button class="btn btn-primary js-open-order" type="button" data-product="organizer" data-bs-toggle="modal" data-bs-target="#quickOrderModal">Заказать</button></div>
   </div>
-</section>
-<section class="container my-5">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="mb-0">Популярные товары</h2>
-    <a class="btn btn-outline-primary" href="catalog.html">
-      Все товары
-    </a>
+</article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="product-card card h-100" data-product-card data-id="backpack" data-category="accessories" data-tags="sale" data-price="2000" data-stock="yes" data-name="городской рюкзак">
+  <img class="product-card__image card-img-top" src="images/product-3.webp" alt="Песочный городской рюкзак с карманами" loading="lazy">
+  <div class="product-card__body card-body">
+    <span class="badge badge-sale mb-2">−20%</span><p class="product-card__category">Аксессуары</p><h3 class="product-card__title card-title">Городской рюкзак</h3>
+    <p class="product-card__description card-text">Универсальный рюкзак для учёбы и города.</p>
+    <div class="product-card__meta"><span class="product-card__availability">Осталось мало</span><span class="product-card__rating" aria-label="Рейтинг 4,9 из 5">★ 4,9</span></div>
+    <p class="product-card__price"><span class="old-price">2 500 руб.</span>2 000 руб.</p>
+    <div class="product-card__actions mt-2"><a class="btn btn-outline-primary" href="product.html?id=backpack">Подробнее</a><button class="btn btn-primary js-open-order" type="button" data-product="backpack" data-bs-toggle="modal" data-bs-target="#quickOrderModal">Заказать</button></div>
   </div>
+</article></div></div>
+    </section>
 
-  <div class="row g-4">
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-success mb-3">Новинка</span>
-        <h3 class="h5">Товар 1</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">1000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
+    <section class="mb-4" aria-labelledby="faq-title">
+      <div class="page-intro mb-3"><p class="eyebrow">Частые вопросы</p><h2 class="section-title" id="faq-title">О проекте</h2></div>
+      <div class="accordion" id="homeFaq">
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaqOne" aria-expanded="true" aria-controls="homeFaqOne">Как оформить заявку?</button></h3><div id="homeFaqOne" class="accordion-collapse collapse show" data-bs-parent="#homeFaq"><div class="accordion-body">Откройте товар и нажмите «Оформить заявку» либо воспользуйтесь формой на отдельной странице. Для быстрой демонстрации доступна форма в модальном окне.</div></div></div>
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaqTwo" aria-expanded="false" aria-controls="homeFaqTwo">Отправляются ли данные на сервер?</button></h3><div id="homeFaqTwo" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Нет. Это учебная frontend-версия: формы проверяют заполнение и показывают результат на странице, но backend не подключён.</div></div></div>
       </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-warning text-dark mb-3">Хит</span>
-        <h3 class="h5">Товар 2</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">1500 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-danger mb-3">Скидка</span>
-        <h3 class="h5">Товар 3</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">2000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
 </main>
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container">
-    <div class="row align-items-center g-3">
-      <div class="col-12 col-md-6">
-        <p class="mb-0">
-          &copy; 2026 Bootstrap Shop. Учебный проект.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-6 text-md-end">
-        <a class="text-white text-decoration-none me-3" href="catalog.html">
-          Каталог
-        </a>
-        <a class="text-white text-decoration-none" href="order.html">
-          Заявка
-        </a>
-      </div>
+<div class="modal fade" id="quickOrderModal" tabindex="-1" aria-labelledby="quickOrderTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><div><p class="eyebrow mb-1">Быстрая заявка</p><h2 class="modal-title fs-5" id="quickOrderTitle">Оставить контакты</h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
+    <div class="modal-body">
+      <div class="alert alert-info py-2" role="status">Заполните форму. Поля со звёздочкой обязательны.</div>
+      <div class="alert alert-success d-none" id="quickOrderSuccess" role="status" aria-live="polite">Проверка формы пройдена. В демонстрационной версии данные не отправляются на сервер.</div>
+      <form id="quickOrderForm" class="needs-validation" novalidate>
+        <div class="mb-3"><label class="form-label" for="quickName">Имя *</label><input class="form-control" id="quickName" name="name" type="text" minlength="2" autocomplete="name" required><div class="invalid-feedback">Введите имя (не менее двух символов).</div></div>
+        <div class="mb-3"><label class="form-label" for="quickEmail">E-mail *</label><input class="form-control" id="quickEmail" name="email" type="email" autocomplete="email" required><div class="invalid-feedback">Введите корректный e-mail.</div></div>
+        <div class="mb-3"><label class="form-label" for="quickPhone">Телефон *</label><div class="input-group has-validation"><span class="input-group-text">+7</span><input class="form-control" id="quickPhone" name="phone" type="tel" inputmode="tel" placeholder="900 000-00-00" pattern="[0-9 ()-]{10,16}" required><div class="invalid-feedback">Проверьте номер телефона.</div></div><div class="form-text">Укажите номер без кода страны.</div></div>
+        <div class="mb-3"><label class="form-label" for="quickProduct">Товар *</label><select class="form-select" id="quickProduct" name="product" required><option value="">Выберите товар</option><option value="planner">Ежедневник A5 — 1 000 руб.</option><option value="organizer">Органайзер для стола — 1 500 руб.</option><option value="backpack">Городской рюкзак — 2 000 руб.</option><option value="lamp">Настольная лампа — 1 800 руб.</option><option value="pencil-case">Пенал на молнии — 900 руб.</option><option value="bottle">Бутылка для воды — 2 200 руб.</option></select><div class="invalid-feedback">Выберите товар.</div></div>
+        <div class="mb-3"><label class="form-label" for="quickComment">Комментарий</label><textarea class="form-control" id="quickComment" name="comment" rows="2" maxlength="500"></textarea></div>
+        <div class="form-check mb-3"><input class="form-check-input" id="quickConsent" name="consent" type="checkbox" required><label class="form-check-label" for="quickConsent">Согласен на обработку данных *</label><div class="invalid-feedback">Необходимо подтвердить согласие.</div></div>
+        <button class="btn btn-primary w-100" type="submit">Проверить и продолжить</button>
+      </form>
     </div>
+  </div></div>
+</div>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Учебный интернет-магазин. Демонстрационный проект без серверной обработки заказов.</p></div>
+    <nav class="d-flex flex-wrap gap-3" aria-label="Ссылки в подвале"><a href="catalog.html">Каталог</a><a href="order.html">Оформить заявку</a><a href="#top">Наверх ↑</a></nav>
   </div>
 </footer>
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-</body>
-</html>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body></html>
