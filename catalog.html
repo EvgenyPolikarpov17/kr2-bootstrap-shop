@@ -13,7 +13,7 @@
 <header class="site-header">
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html">ShopProject</a>
+      <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>ShopProject</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="product.html?id=planner">Товар</a></li><li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li></ul>
@@ -24,7 +24,7 @@
 <main id="main-content" class="py-4 py-lg-5">
   <div class="container">
     <nav aria-label="Хлебные крошки" class="mb-3"><ol class="breadcrumb mb-0"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item active" aria-current="page">Каталог</li></ol></nav>
-    <section class="page-intro mb-4"><p class="eyebrow">Каталог</p><h1 class="section-title">Товары для учёбы и рабочего места</h1><p class="section-copy">Используйте поиск и фильтры, чтобы сузить список. Карточки показывают цену, рейтинг и наличие.</p></section>
+    <section class="page-intro mb-4"><p class="eyebrow">Каталог</p><h1 class="section-title">Товары для учёбы и рабочего места</h1><p class="section-copy">Канцелярия, вещи для стола и полезные аксессуары. Ищите по названию или отберите подходящее по цене и категории.</p></section>
     <div class="row g-4 align-items-start">
       <div class="col-12 col-lg-3">
         <aside class="catalog-filters" aria-labelledby="filters-title">
@@ -52,7 +52,7 @@
       </div>
       <div class="col-12 col-lg-9">
         <div class="catalog-toolbar">
-          <div><h2 class="h5 mb-1">Все товары</h2><p class="catalog-results mb-0" id="catalogCount" aria-live="polite">Найдено: 6 товаров</p></div>
+          <div><h2 class="h5 mb-1">Весь ассортимент</h2><p class="catalog-results mb-0" id="catalogCount" aria-live="polite">Найдено: 6 товаров</p></div>
           <div class="d-flex flex-column flex-sm-row gap-2"><div class="input-group"><label class="input-group-text" for="catalogSearch">Поиск</label><input class="form-control" id="catalogSearch" type="search" placeholder="Название товара" aria-label="Поиск по названию"></div><select id="catalogSort" class="form-select" aria-label="Сортировка товаров"><option value="default">Сначала популярные</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="name">По названию</option></select></div>
         </div>
         <div class="row g-3" id="catalogGrid"><div class="col-12 col-md-6 col-xl-4 catalog-item"><article class="product-card card h-100" data-product-card data-id="planner" data-category="study" data-tags="hit" data-price="1000" data-stock="yes" data-name="ежедневник a5">
@@ -140,7 +140,7 @@
 </div>
 <footer class="site-footer">
   <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
-    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Учебный интернет-магазин. Демонстрационный проект без серверной обработки заказов.</p></div>
+    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Полезные вещи для учёбы, работы и повседневных дел.</p></div>
     <nav class="d-flex flex-wrap gap-3" aria-label="Ссылки в подвале"><a href="catalog.html">Каталог</a><a href="order.html">Оформить заявку</a><a href="#top">Наверх ↑</a></nav>
   </div>
 </footer>

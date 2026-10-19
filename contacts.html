@@ -13,7 +13,7 @@
 <header class="site-header">
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html">ShopProject</a>
+      <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>ShopProject</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="product.html?id=planner">Товар</a></li><li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li></ul>
@@ -23,7 +23,7 @@
 </header>
 <main id="main-content" class="py-4 py-lg-5"><div class="container">
   <nav aria-label="Хлебные крошки" class="mb-3"><ol class="breadcrumb mb-0"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item active" aria-current="page">Контакты</li></ol></nav>
-  <section class="page-intro mb-4"><p class="eyebrow">Связь</p><h1 class="section-title">Контакты</h1><p class="section-copy">Выберите удобный способ связи или перейдите к форме заявки. Контактные данные ниже указаны как примеры для учебного проекта.</p></section>
+  <section class="page-intro mb-4"><p class="eyebrow">Связь</p><h1 class="section-title">Контакты</h1><p class="section-copy">Остались вопросы по товару? Напишите нам или оставьте заявку — уточним детали и поможем с выбором.</p></section>
   <section class="row g-3 mb-5" aria-label="Контактная информация">
     <div class="col-12 col-md-4"><article class="contact-card"><span class="contact-card__label">Телефон</span><a class="contact-card__value" href="tel:+79000000000">+7 (900) 000-00-00</a><p class="text-secondary small mt-2 mb-0">Учебный номер для демонстрации ссылки tel.</p></article></div>
     <div class="col-12 col-md-4"><article class="contact-card"><span class="contact-card__label">Электронная почта</span><a class="contact-card__value" href="mailto:info@example.com">info@example.com</a><p class="text-secondary small mt-2 mb-0">Пример адреса для демонстрации mailto.</p></article></div>
@@ -32,14 +32,14 @@
   <section class="form-panel mb-5" aria-labelledby="contactCtaTitle"><div class="row g-3 align-items-center"><div class="col-12 col-lg-8"><p class="eyebrow mb-1">Обратная связь</p><h2 class="section-title mb-2" id="contactCtaTitle">Нужна консультация?</h2><p class="text-secondary mb-0">Оставьте заявку, укажите товар и опишите вопрос — форма проверит корректность обязательных полей.</p></div><div class="col-12 col-lg-4 text-lg-end"><a class="btn btn-primary btn-lg" href="order.html">Оформить заявку</a></div></div></section>
   <section aria-labelledby="contactsFaqTitle"><div class="page-intro mb-3"><p class="eyebrow">Частые вопросы</p><h2 class="section-title" id="contactsFaqTitle">О проекте</h2></div>
     <div class="accordion" id="contactsFaq">
-      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contactsFaqOne" aria-expanded="true" aria-controls="contactsFaqOne">Почему в проекте пять страниц?</button></h3><div class="accordion-collapse collapse show" id="contactsFaqOne" data-bs-parent="#contactsFaq"><div class="accordion-body">В проекте сохранена структура первой контрольной работы: главная, каталог, карточка товара, заявка и контакты. Для второй работы интерфейс отдельно реализован на Bootstrap.</div></div></div>
-      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactsFaqTwo" aria-expanded="false" aria-controls="contactsFaqTwo">Работает ли отправка заявки?</button></h3><div class="accordion-collapse collapse" id="contactsFaqTwo" data-bs-parent="#contactsFaq"><div class="accordion-body">Проверка формы работает в браузере. Для реальной отправки данных необходимо подключить серверную часть, которой в рамках этой версии нет.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contactsFaqOne" aria-expanded="true" aria-controls="contactsFaqOne">Можно ли выбрать товар до оформления заявки?</button></h3><div class="accordion-collapse collapse show" id="contactsFaqOne" data-bs-parent="#contactsFaq"><div class="accordion-body">Да, откройте каталог, выберите товар и перейдите к подробному описанию. Название выбранного товара будет доступно в форме заявки.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactsFaqTwo" aria-expanded="false" aria-controls="contactsFaqTwo">Заявка отправляется сразу?</button></h3><div class="accordion-collapse collapse" id="contactsFaqTwo" data-bs-parent="#contactsFaq"><div class="accordion-body">Сейчас форма проверяет заполнение и показывает подтверждение в браузере. Передача данных на сервер пока не подключена.</div></div></div>
     </div>
   </section>
 </div></main>
 <footer class="site-footer">
   <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
-    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Учебный интернет-магазин. Демонстрационный проект без серверной обработки заказов.</p></div>
+    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Полезные вещи для учёбы, работы и повседневных дел.</p></div>
     <nav class="d-flex flex-wrap gap-3" aria-label="Ссылки в подвале"><a href="catalog.html">Каталог</a><a href="order.html">Оформить заявку</a><a href="#top">Наверх ↑</a></nav>
   </div>
 </footer>
