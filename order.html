@@ -13,7 +13,7 @@
 <header class="site-header">
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html">ShopProject</a>
+      <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>ShopProject</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="product.html?id=planner">Товар</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="order.html">Заявка</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li></ul>
@@ -23,10 +23,10 @@
 </header>
 <main id="main-content" class="py-4 py-lg-5"><div class="container">
   <nav aria-label="Хлебные крошки" class="mb-3"><ol class="breadcrumb mb-0"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li><li class="breadcrumb-item active" aria-current="page">Заявка</li></ol></nav>
-  <section class="page-intro mb-4"><p class="eyebrow">Обратная связь</p><h1 class="section-title">Оформление заявки</h1><p class="section-copy">Заполните контактные данные и укажите, по какому вопросу с вами связаться. Обязательные поля отмечены звёздочкой.</p></section>
+  <section class="page-intro mb-4"><p class="eyebrow">Обратная связь</p><h1 class="section-title">Оформление заявки</h1><p class="section-copy">Укажите контакты и выберите товар. Обязательные поля отмечены звёздочкой — их нужно заполнить перед проверкой заявки.</p></section>
   <div class="row g-4 align-items-start">
     <div class="col-12 col-lg-8"><section class="form-panel" aria-labelledby="orderFormTitle"><h2 class="h4 mb-3" id="orderFormTitle">Контактные данные</h2>
-      
+      <div class="alert alert-success d-none" id="orderSuccess" role="status" aria-live="polite"><strong>Форма проверена.</strong> В этой версии проекта данные не отправляются на сервер. Для реальной отправки потребуется backend.</div>
       <form id="orderForm" class="needs-validation" novalidate>
         <div class="row g-3">
           <div class="col-12 col-md-6"><label for="orderName" class="form-label">Имя *</label><input id="orderName" class="form-control" name="name" type="text" minlength="2" autocomplete="given-name" required><div class="invalid-feedback">Введите имя длиной не менее двух символов.</div></div>
@@ -41,11 +41,12 @@
         </div>
       </form>
     </section></div>
-    <div class="col-12 col-lg-4"><aside class="side-panel" aria-labelledby="afterOrderTitle"><p class="eyebrow">Следующий шаг</p><h2 class="h4" id="afterOrderTitle">Что проверить перед отправкой</h2><ol class="ps-3 mb-3"><li class="mb-2">Укажите рабочий e-mail и телефон.</li><li class="mb-2">Выберите товар и тему обращения.</li><li>Проверьте согласие на обработку данных.</li></ol>
+    <div class="col-12 col-lg-4"><aside class="side-panel" aria-labelledby="afterOrderTitle"><p class="eyebrow">Следующий шаг</p><h2 class="h4" id="afterOrderTitle">Перед отправкой</h2><ol class="ps-3 mb-3"><li class="mb-2">Проверьте e-mail и номер телефона.</li><li class="mb-2">Выберите товар и тему обращения.</li><li>Подтвердите согласие на обработку данных.</li></ol>
+  </div>
 </div></main>
 <footer class="site-footer">
   <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
-    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Учебный интернет-магазин. Демонстрационный проект без серверной обработки заказов.</p></div>
+    <div><div class="site-footer__brand">ShopProject</div><p class="site-footer__text">Полезные вещи для учёбы, работы и повседневных дел.</p></div>
     <nav class="d-flex flex-wrap gap-3" aria-label="Ссылки в подвале"><a href="catalog.html">Каталог</a><a href="order.html">Оформить заявку</a><a href="#top">Наверх ↑</a></nav>
   </div>
 </footer>
